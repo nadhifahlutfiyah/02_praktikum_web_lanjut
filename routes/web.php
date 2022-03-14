@@ -13,14 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'Selamat Datang';
+Route::get('/home', function () {
+    return view('home');
 });
 
-Route::get('/about', function () {
-    return '2041720082, Nadhifah Lutfiyah Mahmudah, TI-2B';
-});
+// Route::get('/', function () {
+//    return 'Selamat Datang';
+//});
 
-Route::get('/articles/{id}', function ($id) {
-    return 'Halaman Artikel dengan ID '. $id;
-});
+// Route::get('/about', function () {
+//    return '2041720082, Nadhifah Lutfiyah Mahmudah, TI-2B';
+//});
+
+//Route::get('/articles/{id}', function ($id) {
+//    return 'Halaman Artikel dengan ID '. $id;
+//});
